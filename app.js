@@ -27,16 +27,16 @@ function dragging(){
 
 function dragOver(e){
     e.preventDefault()
-    console.log("You are dragging something over " + e.target.classList)
+    console.log("You are dragging something over " + e.target.classList);
 }
 
 function dragEnter(e){
     e.target.classList.add("highlight");
-    console.log("You are entering the space of " + e.target.classList)
+    console.log("You are entering the space of " + e.target.classList);
 }
 
 function dragLeave(e){
-    console.log("You are leaving the space of " + e.target.classList)
+    console.log("You are leaving the space of " + e.target.classList);
     e.target.classList.remove("highlight");
 }
 
@@ -47,8 +47,8 @@ function dragDrop(e){
 }
 
 function dragEnd(e){
-    e.target.classList.add("target")
-    setTimeout(() =>e.target.classList.remove("target"),100)
-    console.log("The drag has ended in " + e.target.classList)
-    infoDisplay.textContent=""
+    e.target.classList.add("target");
+    setTimeout(() =>e.target.classList.remove("target"),100);
+    console.log("The drag has ended in " + e.target.classList);
+    infoDisplay.textContent="";
 }
